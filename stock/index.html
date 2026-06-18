@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Realtime Stock Analyzer</title>
+  <meta name="description" content="Live stock price visualization with interactive charts." />
+  <!-- Existing design tokens -->
+  <link rel="stylesheet" href="../css/variables.css" />
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="css/stock.css" />
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0"></script>
+</head>
+<body class="no-scroll">
+  <main class="stock-app">
+    <section class="stock-header">
+      <h1>Realtime Stock Analyzer</h1>
+      <div class="stock-controls">
+        <input type="text" id="symbolInput" placeholder="Enter ticker (e.g., AAPL)" />
+        <button id="loadBtn" class="btn">Load</button>
+      </div>
+    </section>
+    <section class="stock-info" id="stockInfo" hidden>
+      <h2 id="stockSymbol"></h2>
+      <p>Current Price: <span id="currentPrice"></span></p>
+    </section>
+    <canvas id="priceChart" width="800" height="400"></canvas>
+  </main>
+  <script src="js/stock.js"></script>
+</body>
+</html>

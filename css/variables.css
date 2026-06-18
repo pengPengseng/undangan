@@ -1,0 +1,137 @@
+/* ============================================
+   DESIGN TOKENS — Undangan Pernikahan Jawa
+   ============================================ */
+
+:root {
+  /* ── Primary Colors ── */
+  --color-ivory: #F8F4EC;
+  --color-ivory-light: #FDFBF7;
+  --color-ivory-dark: #EDE8DB;
+
+  --color-gold: #C8A96A;
+  --color-gold-light: #D4BC8A;
+  --color-gold-dark: #A8894A;
+  --color-gold-shimmer: #E0C98D;
+
+  --color-brown: #6B4F3A;
+  --color-brown-light: #8B6F5A;
+  --color-brown-dark: #4B2F1A;
+
+  --color-sage: #A8B5A2;
+  --color-sage-light: #C5CFC0;
+  --color-sage-dark: #8B9E85;
+
+  --color-white: #FFFFFF;
+  --color-black: #1A1A1A;
+
+  /* ── Semantic Colors ── */
+  --color-text-primary: #3D2E1F;
+  --color-text-secondary: #6B5B4D;
+  --color-text-muted: #9A8B7D;
+  --color-text-on-dark: #F8F4EC;
+  --color-text-gold: #C8A96A;
+
+  --color-bg-primary: #F8F4EC;
+  --color-bg-secondary: #FDFBF7;
+  --color-bg-dark: #2C1E14;
+  --color-bg-section-alt: #F1ECE2;
+
+  --color-border: rgba(200, 169, 106, 0.3);
+  --color-border-strong: rgba(200, 169, 106, 0.6);
+
+  /* ── Gradients ── */
+  --gradient-gold: linear-gradient(135deg, #C8A96A 0%, #E0C98D 50%, #C8A96A 100%);
+  --gradient-gold-horizontal: linear-gradient(90deg, transparent, #C8A96A, transparent);
+  --gradient-dark-overlay: linear-gradient(180deg, rgba(44, 30, 20, 0.4) 0%, rgba(44, 30, 20, 0.8) 100%);
+  --gradient-hero-overlay: linear-gradient(180deg, rgba(44, 30, 20, 0.2) 0%, rgba(44, 30, 20, 0.6) 50%, rgba(44, 30, 20, 0.85) 100%);
+  --gradient-section-fade: linear-gradient(180deg, var(--color-bg-primary) 0%, var(--color-bg-section-alt) 100%);
+
+  /* ── Typography ── */
+  --font-display: 'Cinzel', 'Cinzel Decorative', serif;
+  --font-heading: 'Cormorant Garamond', 'Georgia', serif;
+  --font-body: 'Poppins', 'Segoe UI', sans-serif;
+
+  --fs-hero-title: clamp(2.5rem, 6vw, 5rem);
+  --fs-hero-subtitle: clamp(1rem, 2.5vw, 1.5rem);
+  --fs-section-title: clamp(1.8rem, 4vw, 3rem);
+  --fs-section-subtitle: clamp(0.9rem, 2vw, 1.2rem);
+  --fs-body: clamp(0.9rem, 1.5vw, 1.05rem);
+  --fs-small: clamp(0.75rem, 1.2vw, 0.875rem);
+  --fs-caption: 0.75rem;
+  --fs-countdown: clamp(2rem, 5vw, 3.5rem);
+
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  --lh-tight: 1.2;
+  --lh-normal: 1.6;
+  --lh-relaxed: 1.8;
+
+  --ls-wide: 0.15em;
+  --ls-wider: 0.25em;
+  --ls-widest: 0.4em;
+
+  /* ── Spacing ── */
+  --space-1: 0.25rem;   /* 4px */
+  --space-2: 0.5rem;    /* 8px */
+  --space-3: 0.75rem;   /* 12px */
+  --space-4: 1rem;      /* 16px */
+  --space-5: 1.25rem;   /* 20px */
+  --space-6: 1.5rem;    /* 24px */
+  --space-8: 2rem;      /* 32px */
+  --space-10: 2.5rem;   /* 40px */
+  --space-12: 3rem;     /* 48px */
+  --space-16: 4rem;     /* 64px */
+  --space-20: 5rem;     /* 80px */
+  --space-24: 6rem;     /* 96px */
+  --space-32: 8rem;     /* 128px */
+
+  --section-padding-y: clamp(4rem, 8vw, 8rem);
+  --section-padding-x: clamp(1rem, 4vw, 3rem);
+  --container-max: 1100px;
+  --container-narrow: 800px;
+
+  /* ── Border Radius ── */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-2xl: 32px;
+  --radius-full: 9999px;
+
+  /* ── Shadows ── */
+  --shadow-sm: 0 1px 3px rgba(107, 79, 58, 0.08);
+  --shadow-md: 0 4px 12px rgba(107, 79, 58, 0.1);
+  --shadow-lg: 0 8px 30px rgba(107, 79, 58, 0.12);
+  --shadow-xl: 0 16px 50px rgba(107, 79, 58, 0.15);
+  --shadow-gold: 0 4px 20px rgba(200, 169, 106, 0.25);
+  --shadow-gold-lg: 0 8px 40px rgba(200, 169, 106, 0.3);
+  --shadow-inner: inset 0 2px 6px rgba(107, 79, 58, 0.06);
+
+  /* ── Glassmorphism ── */
+  --glass-bg: rgba(248, 244, 236, 0.7);
+  --glass-bg-dark: rgba(44, 30, 20, 0.6);
+  --glass-border: rgba(200, 169, 106, 0.2);
+  --glass-blur: 12px;
+  --glass-blur-heavy: 20px;
+
+  /* ── Transitions ── */
+  --transition-fast: 150ms ease;
+  --transition-base: 300ms ease;
+  --transition-slow: 500ms ease;
+  --transition-slower: 800ms ease;
+  --transition-spring: 500ms cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* ── Z-Index Layers ── */
+  --z-petals: 1;
+  --z-content: 10;
+  --z-header: 100;
+  --z-overlay: 500;
+  --z-lightbox: 900;
+  --z-cover: 1000;
+  --z-music: 950;
+  --z-toast: 1100;
+}
